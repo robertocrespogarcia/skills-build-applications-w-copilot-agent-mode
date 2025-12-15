@@ -14,7 +14,7 @@ function Leaderboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(getApiBaseUrl() + '/leaderboards/')
+    fetch(getApiBaseUrl() + '/leaderboard/')
       .then(res => res.json())
       .then(data => {
         setLeaderboard(data);
